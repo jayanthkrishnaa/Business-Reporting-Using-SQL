@@ -1,3 +1,6 @@
+This gives us the report of Total_gross_price of each product that are sold by CROMA in the financial year 2021.
+
+
 select s.date,s.product_code,p.product,p.variant,
 s.sold_quantity,g.gross_price,s.sold_quantity*g.gross_price as total_gross_price
 from fact_sales_monthly s
